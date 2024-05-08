@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styler.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <div class="header">
+    <div class="body-text">Регистрация</div>
+    <a href="index.html" class="header-logo">
+        <div class="header-logo-kvad">
+            <div class="header-logo-text">BeStyle</div>
+        </div>
+    </a>
+    <form action="submit.php" method="post">
+        <div class="body-block">
+            <input class="body-block-text" type="text" id="username" placeholder="Логин" name="username" pattern="^[a-zA-Z0-9_-]{3,20}$" title="Логин должен содержать только буквы, цифры и знаки '-' и '_', от 3 до 20 символов" required><br><br>
+            <div class="body-block-polos"></div>
+            <input type="text" class="body-block-text2" placeholder="Почта"></input>
+            <div class="body-block-polos2"></div>
+            <input class="body-block-text3" type="password" id="password" placeholder="Пароль" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$" title="Пароль должен быть минимум 8 символов, содержать цифры, буквы в разных регистрах и спец. символы" required><br><br>
+            <div class="body-block-polos3"></div>
+            <div class="block-button">
+                <div class="block-button-text">Продолжить</div>
+            </div>
+            <div class="block-text">Уже есть аккаунт</div>
+        </div>
+        </form>
+    </div>
+
+    </div>
+</body>
+</html>
